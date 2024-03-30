@@ -1,0 +1,11 @@
+body {
+  margin: 0px !important;
+  font-family: 'Karla', sans-serif;
+}
+input {
+  font-family: 'Karla', sans-serif;
+}
+.disable {
+  pointer-events: none;
+  color: #dddddd !important;
+}
