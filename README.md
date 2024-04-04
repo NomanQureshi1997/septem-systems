@@ -61,3 +61,5 @@ Data binding in Vue. js establishes a connection between the application's data 
 3. Reduces user actions & page refresh.
 4. Increased Productivity (No need to define functions to saves values)
 5. Declarative Syntax etc
+
+## For React task please go through readme file in /react_server directory
