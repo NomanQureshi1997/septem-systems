@@ -8,14 +8,6 @@ Clone this repository to your local machine:
 git clone https://github.com/NomanQureshi1997/septem-systems.git
 ```
 
-## Installation With docker
-
-```bash
-docker-compose up
-```
-
-## Installation Without docker
-
 ### Install Node.js
 
 Before proceeding, make sure you have Node.js installed on your system. You can download and install the latest version of Node.js from the official Node.js website.
@@ -40,8 +32,34 @@ https://www.figma.com/file/EqcZKJ6EZn5rRFHHjOw6tm/Clean-Kanban-Todo-(Community)?
 
 ## Screen shots
 
-!['Todo App'](./public/app.png)
-
+![''](./public/app.png)
 
 ## Description
+
 This app simpliy triggers an API of https://app.exchangerate-api.com upon the user selection.
+
+# Quiz App
+
+## Node Server
+
+```bash
+cd node_server
+```
+
+### Serving
+
+```bash
+node index.js
+```
+
+### Postman Collection
+
+Once node server is up running, import postman collection (./node_server/quiz_app.postman_collection.json). Update your environment url with your serving url. once done you will be able to access all the enpoints.
+
+# Note
+
+Docker is only install for vue app, if you run vue app using docker. Please run following command.
+
+```bash
+docker-compose up
+```
