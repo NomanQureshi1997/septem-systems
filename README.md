@@ -58,7 +58,7 @@ Once node server is up running, import postman collection (./node_server/quiz_ap
 
 # Note
 
-Docker is only install for vue app, if you run vue app using docker. Please run following command.
+Docker is only install for vue app, if you run vue app using docker. Please run following command
 
 ```bash
 docker-compose up
