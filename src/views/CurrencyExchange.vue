@@ -13,7 +13,7 @@
         </select>
       </div>
       <div class="input-style" id="to">
-        <input type="number" v-model="exchangeTOValue" />
+        <input readonly type="number" v-model="exchangeTOValue" />
         <div class="vl"></div>
         <select aria-readonly="true" id="currencyDropdown" v-model="exchangeTO">
           <option v-for="(currency, index) in currenciesList" :key="index" :value="currency.code">
