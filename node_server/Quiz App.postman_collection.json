@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "b6265d86-7868-4a33-b40e-943f24f3ec4b",
+		"name": "Quiz App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15954821",
+		"_collection_link": "https://www.postman.com/galactic-moon-771475/workspace/feedback/collection/15954821-b6265d86-7868-4a33-b40e-943f24f3ec4b?action=share&source=collection_link&creator=15954821"
+	},
+	"item": [
+		{
+			"name": "Get Questions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/questions?difficulty=hard",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"questions"
+					],
+					"query": [
+						{
+							"key": "difficulty",
+							"value": "hard"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a Question",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"choices\": [\"hbo\", \"HI1\"],\r\n\t\"question\": \"Whats my Pet name?\",\r\n\t\"correctAnswer\": \"hbo\",\r\n\t\"difficulty\": \"hard\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/questions",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Answer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"questionId\": 1,\r\n\t\t\"answer\": \"hbo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/answers",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"answers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
