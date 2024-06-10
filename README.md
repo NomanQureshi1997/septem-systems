@@ -1,4 +1,4 @@
-# To Do list app for UnLayer
+# Currency Exchange API
 
 ## Clone the Repository
 
