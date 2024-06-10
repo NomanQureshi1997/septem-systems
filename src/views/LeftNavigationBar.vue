@@ -26,12 +26,12 @@ import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
 
 // Define company name
-const comapny = 'Unlayer'
+const comapny = 'Septem Systems'
 
 // Define navigation items
 const navItems = [
   {
-    title: 'Todo List',
+    title: 'Currency Exchange',
     path: '/',
     svg: 'box',
     disable: false

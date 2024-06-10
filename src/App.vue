@@ -27,7 +27,7 @@ main {
 }
 @media screen and (min-width: 1537px) {
   #navigation {
-    width: 9.25%;
+    width: 12%;
   }
 }
 </style>
